@@ -1,11 +1,11 @@
 {"intents": [
     {"tag": "greeting",
-     "patterns": ["Hello", "What's up", "Hi", "Hey", "What's good"],
+     "patterns": ["Hello", "What's up", "Hi", "Hey", "What's good", "Heyyy", "Heyyyyyy", "Hellooo"],
      "responses": ["Hello, I'm eTA", "Good to see you again", "Hi there, I'm eTA. How can I help you?", "Heyyy!", "Welcome back"],
      "context": [""]
     },
     {"tag": "introduce",
-     "patterns": ["What's your name?", "My name is", "Who are you?"],
+     "patterns": ["What's your name?", "My name is", "Who are you?", "What is your name", "Who are you"],
      "responses": ["I'm eTA, your electronic Teacher's Assistant", "I go by eTA", "You can call me eTA :)"],
      "context": [""]
     },
@@ -40,7 +40,7 @@
      "context": [""]
     },
     {"tag": "vent_sad",
-     "patterns": ["School is so hard", "I miss my family", "I'm sad", "I'm tired", "I couldn't do the test", "I think I failed the midterm", "I'm falling behind in class", "I have no friends", "I can't do the homework", ":("],
+     "patterns": ["I'm depressed", "School is so hard", "I miss my family", "I'm sad", "I'm tired", "I couldn't do the test", "I think I failed the midterm", "I'm falling behind in class", "I have no friends", "I can't do the homework", ":("],
      "responses": ["I'm sure you'll pull through! I believe in you!", "I understand. It's normal to feel like this sometimes", "I gotchu", "Don't be too hard on yourself", "It's ok to feel like this. You're not alone", "I'm sorry to hear that"],
      "context": [""]
     },
@@ -60,43 +60,43 @@
      "context": [""]
     },
     {"tag": "gen_course_advice",
-     "patterns": ["How do I do better in my classes", "How do I raise my grade", "How can I get better grades", "Who can help me with coursework", "Where can I get help for classes"],
+     "patterns": ["How do I do better in my classes", "How do I raise my grade", "How can I get better grades", "Who can help me with coursework", "Where can I get help for classes", "How do I ace my exam", "How can I pass my midterm", "How do I not struggle with class", "How do I pass my quiz"],
      "responses": ["Make sure to take advantage of office hours!", "Try reading the textbook before lectures!", "Apart from studying, get plenty of sleep every day!", "Check out peer tutoring!"],
      "context": [""]
     },
     {"tag": "linked_list",
-     "patterns": ["I don't understand linked lists", "I need help with linked lists", "I'm lost on linked lists", "I don't get what linked lists are", "Could you explain linked lists to me?"],
+     "patterns": ["Linked list", "I don't understand linked lists", "I need help with linked lists", "I'm lost on linked lists", "I don't get what linked lists are", "Could you explain linked lists to me?"],
      "responses": ["A linked list is a linear data structure, in which the elements are not stored at contiguous memory locations. The elements in a linked list are linked using pointers. To learn more, check out this guide: https://docs.google.com/presentation/d/1IsFINK-dDnEHZyQpSCuNASfgI1ulO1ZCzcF1tnLts20/edit?usp=sharing"],
      "context": [""]
     },
     {"tag": "orders_of_growth",
-     "patterns": ["I don't understand orders of growth", "I need help with time complexities", "I'm lost on logarithmic time", "I don't get what orders of growth are", "Could you explain running time to me?" ],
+     "patterns": ["Orders of growth", "Time complexities", "Big O of N", "I don't understand orders of growth", "I need help with time complexities", "I'm lost on logarithmic time", "I don't get what orders of growth are", "Could you explain running time to me?" ],
      "responses": ["The time complexity of an algorithm is an approximation of the time required to run a computer program as the input size increases. You can read more about this at: https://cs61a.org/study-guide/orders-of-growth/"],
      "context": [""]
     },
     {"tag": "recursion",
-     "patterns": ["I don't understand recursion", "How do I recurse?", "Recursion doesn't make sense", "How do I figure out the recursive case?", "How do I know the base case?"],
+     "patterns": ["Recursion", "I don't understand recursion", "How do I recurse?", "Recursion doesn't make sense", "How do I figure out the recursive case?", "How do I know the base case?"],
      "responses": ["Recursion is about solving a problem by breaking it down into simpler versions of itself. Usually it uses a recursive call to itself and a base case to know when to stop. You can learn more about recursion here: https://cs61a.org/study-guide/recursion/"],
      "context": [""]
     },
     {"tag": "oop",
-     "patterns": ["I don't understand object-oriented programming", "I need help with OOP", "I'm lost on OOP", "I don't get what object-oriented programming is", "Could you explain OOP to me?", "What is a class in python?"],
+     "patterns": ["OOP", "Object-oriented programming", "I don't understand object-oriented programming", "I need help with OOP", "I'm lost on OOP", "I don't get what object-oriented programming is", "Could you explain OOP to me?", "What is a class in python?"],
      "responses": ["Object-oriented programming is a programming paradigm that combines representation (data) together with behavior (functions). TO learn more, check out: https://cs61a.org/study-guide/objects/"],
      "context": [""]
     },
     {"tag": "iter_gen",
-     "patterns": ["I don't understand iterators", "I need help with iterables", "I'm lost on generators", "I don't get what yield does", "Could you explain iterators to me?", "What is a generator"],
+     "patterns": ["Iterators", "Generators", "Iterables", "Yield", "Iterating", "I don't understand iterators", "I need help with iterables", "I'm lost on generators", "I don't get what yield does", "Could you explain iterators to me?", "What is a generator"],
      "responses": ["This is quite a complicated topic. Here's a resource to help you out: https://docs.google.com/presentation/d/1n3-R4NR1PIdWn7azEKnF9xSGWf9GJNeQKWyomYYJe1Q/edit?usp=sharing"],
      "context": [""]
     },
     {"tag": "envi_diag",
-     "patterns": ["I don't understand environment diagrams", "I need help with environment diagrams", "I'm lost on environment diagrams", "How to draw environment diagrams", "How do environment diagrams work?", "What is an environment diagram"],
+     "patterns": ["Environment diagram", "I don't understand environment diagrams", "I need help with environment diagrams", "I'm lost on environment diagrams", "How to draw environment diagrams", "How do environment diagrams work?", "What is an environment diagram"],
      "responses": ["Environment diagrams are models to represent the execution of a program through every step. Following strict rules and procedures can help you! Here is a guide to drawing environment diagrams: https://cs61a.org/study-guide/environments-hof/"],
      "context": [""]
     },
     {"tag": "medical",
-     "patterns": ["Where can I get vaccinated?", "Where can I get tested for COVID?", "I am sick", "I have a fever"],
-     "responses": ["You should schedule an appointment through eTang at https://etang.berkeley.edu/", "Berkeley provides medical service to stduents! Visit eTang at https://etang.berkeley.edu/"],
+     "patterns": ["Where can I get vaccinated?", "Where can I get tested for COVID?", "I am sick", "I have a fever", "COVID-19", "Vaccine"],
+     "responses": ["You should schedule an appointment through eTang at https://etang.berkeley.edu/", "Berkeley provides medical service to students! Visit eTang at https://etang.berkeley.edu/"],
      "context": [""]
     },
     {"tag": "other",
