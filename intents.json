@@ -5,7 +5,7 @@
      "context": [""]
     },
     {"tag": "introduce",
-     "patterns": ["What's your name?", "My name is", "Who are you?", "What is your name", "Who are you"],
+     "patterns": ["What's your name?", "My name is", "What is your name", "Who are you"],
      "responses": ["I'm eTA, your electronic Teacher's Assistant", "I go by eTA", "You can call me eTA :)"],
      "context": [""]
     },
@@ -75,7 +75,7 @@
      "context": [""]
     },
     {"tag": "recursion",
-     "patterns": ["Recursion", "I don't understand recursion", "How do I recurse?", "Recursion doesn't make sense", "How do I figure out the recursive case?", "How do I know the base case?"],
+     "patterns": ["Recursion", "I don't understand recursion", "How do I recurse", "Recursion doesn't make sense", "How do I find the recursive call", "Base case"],
      "responses": ["Recursion is about solving a problem by breaking it down into simpler versions of itself. Usually it uses a recursive call to itself and a base case to know when to stop. You can learn more about recursion here: https://cs61a.org/study-guide/recursion/"],
      "context": [""]
     },
@@ -99,6 +99,11 @@
      "responses": ["You should schedule an appointment through eTang at https://etang.berkeley.edu/", "Berkeley provides medical service to students! Visit eTang at https://etang.berkeley.edu/"],
      "context": [""]
     },
+    {"tag": "berkeley",
+     "patterns": ["I go to UC Berkeley", "Did you see the Cal football game", "Go Bears", "Cal is the best", "Berkeley is an amazing city", "Oski is my favorite mascot"],
+     "responses": ["Go Bears!", "I love Cal too!", "Oski is my best friend!"],
+     "context": [""]
+       },
     {"tag": "other",
      "patterns": ["fewfwehfewhieruoiergklsdnvboset40tjafqwiohprohfljawroigfdlfjaralyriuryitggywfhawiyeihselkjwoiuqkiouefguygoowehfuidsijhf4", "qwer", "asdf", "qwertyuiopasdfghjklzxcvbnm"],
      "responses": ["I'm not sure I understand", "Can you say that again?", "Sorry, I dont think I can help you with that", "Hmmm?", "I don't have an answer for that. Is there something else I can help you with?"],
