@@ -23,14 +23,14 @@ class TextBot:
         self.i = self.master.create_window(10,450,window=self.frame, anchor="w")       
         Label(self.frame,text="You", font=("Helvetica", 11),bg="light green").grid(row=0,column=1,sticky="w",padx=5)
         Label(self.frame,text= datetime.now().strftime("%d-%m-%Y %X"),font=("Helvetica", 9),bg="light green").grid(row=1,column=1,sticky="w",padx=5)
-        Label(self.frame, text=textwrap.fill(message, 25), font=("Helvetica", 13),bg="light green").grid(row=1, column=0,sticky="w",padx=5,pady=3)
+        Label(self.frame, text=textwrap.fill(message, 25), font=("Helvetica", 13),bg="light green").grid(row=1, column=1,sticky="w",padx=5,pady=3)
         root.update_idletasks()
 
 class ReplyBot:
     def __init__(self,master,message=""):
         self.master = master
         self.frame = Frame(master,bg="light blue")
-        self.i = self.master.create_window(10,350,window=self.frame, anchor="w")       
+        self.i = self.master.create_window(10,400,window=self.frame, anchor="w")       
         Label(self.frame,text="ADD THE CHAT BOT NAME HERE", font=("Helvetica", 11),bg="light blue").grid(row=0,column=1,sticky="w",padx=5)
         Label(self.frame,text= datetime.now().strftime("%d-%m-%Y %X"),font=("Helvetica", 9),bg="light blue").grid(row=1,column=1,sticky="w",padx=5)
         Label(self.frame, text=textwrap.fill(message, 25), font=("Helvetica", 13),bg="light blue").grid(row=2, column=1,sticky="w",padx=5,pady=3)
@@ -38,13 +38,14 @@ class ReplyBot:
 
 def send_message():
     if texts:
-        canvas.move(ALL, 0, -200) 
-    msg = ReplyBot(canvas,message=ChatLog.get())
+        canvas.move(ALL, 0, -100) 
+    msg = TextBot(canvas,message=ChatLog.get())
     texts.append(msg)
-    ChatLog.delete(0,'end')
-    res = chatbot_response(msg)
-    reply = ReplyBot(canvas, message = res)
+    canvas.move(ALL, 0, -150)
+    
+    reply = ReplyBot(canvas, message = "hello3")
     texts.append(reply)
+    ChatLog.delete(0,'end')
 
 
 ChatLog = Entry(root,width=26, font=("Helvetica", 13))
