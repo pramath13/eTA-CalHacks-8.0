@@ -95,7 +95,7 @@ training = np.array(training, dtype=object)
 train_x = list(training[:,0])
 train_y = list(training[:,1])
 
-print("Training data created")
+print("Training data created", len(train_y[0]))
 
 for epoch in range(num_epoch):
     num_classes = len(classes)
@@ -130,7 +130,7 @@ for epoch in range(num_epoch):
         total_sample += len(y)
         print("Loss:", loss.item(), c)
 
-save_path = os.path.join(os.getcwd(), "saved_model", f"model_epoch{epoch}.pth.tar")
+save_path = os.path.join(os.getcwd(), "saved_model", f"model_final_epoch{epoch}.pth.tar")
 save_checkpoint(epoch, model, optimizer, loss_list, save_path)
 
 

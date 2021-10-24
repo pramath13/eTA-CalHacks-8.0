@@ -9,7 +9,7 @@ import numpy as np
 import random
 
 model = LanguageModel()
-checkpoint = torch.load(os.path.join(os.getcwd(), 'saved_model', 'model_epoch199.pth.tar'))
+checkpoint = torch.load(os.path.join(os.getcwd(), 'saved_model', 'model_final_epoch199.pth.tar'))
 model.load_state_dict(checkpoint['model_state'])
 model.eval()
 

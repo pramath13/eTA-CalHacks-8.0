@@ -1,7 +1,7 @@
 import torch.nn as nn
 
-train_x = [183]
-train_y = [21]
+train_x = [185]
+train_y = [22]
 
 class LanguageModel(nn.Module):
     def __init__(self):
