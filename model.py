@@ -1,6 +1,6 @@
 import torch.nn as nn
 
-train_x = [185]
+train_x = [199]
 train_y = [22]
 
 class LanguageModel(nn.Module):
@@ -15,8 +15,8 @@ class LanguageModel(nn.Module):
         self.softmax = nn.Softmax()
 
     def forward(self, x):
-        #print("SHAPE", x.shape)
-        x = self.relu(self.fc1(x))
+        print("SHAPE", x.shape)
+        x = self.dropout(self.relu(self.fc1(x)))
         x = self.dropout(self.fc2(x))
         x = self.fc3(x)
         return x
