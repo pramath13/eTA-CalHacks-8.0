@@ -1,9 +1,7 @@
 import torch.nn as nn
-import torch
-import torch.nn.functional as F
 
-train_x = [87]
-train_y = [9]
+train_x = [183]
+train_y = [21]
 
 class LanguageModel(nn.Module):
     def __init__(self):
@@ -17,6 +15,7 @@ class LanguageModel(nn.Module):
         self.softmax = nn.Softmax()
 
     def forward(self, x):
+        #print("SHAPE", x.shape)
         x = self.relu(self.fc1(x))
         x = self.dropout(self.fc2(x))
         x = self.fc3(x)

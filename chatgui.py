@@ -4,6 +4,7 @@ import random
 import re
 from tkinter import messagebox
 from tkinter.font import Font
+from main import chatbot_response
 import textwrap
 
 root = Tk()
@@ -39,7 +40,8 @@ class ReplyBot:
 def send_message():
     if texts:
         canvas.move(ALL, 0, -120) 
-    msg = ReplyBot(canvas,message=ChatLog.get())
+    ReplyBot(canvas,message=ChatLog.get())
+    msg = ChatLog.get()
     texts.append(msg)
     ChatLog.delete(0,'end')
     res = chatbot_response(msg)
@@ -52,8 +54,7 @@ ChatLog.place(x=10, y=550, width=290, height=40)
 
 
 #buton
-SendButton = Button(root, width=10, height=2, 
-relief='raised',state='active',command=send_message)
+SendButton = Button(root, width=10, height=2, relief='raised',state='active',command=send_message)
 SendButton.config(text='Send', bg='lightblue', font='Verdana 13')
 SendButton.place(x=310, y=550)
 

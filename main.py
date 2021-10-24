@@ -78,7 +78,7 @@ def chatbot_response(msg):
     ints = predict_class(msg, model)
     #print(ints)
     res = getResponse(ints, intents)
-    print("RES", res)
+    print(msg, "RES", res)
     return res
 
-chatbot_response("What is L Hospital rule")
+#chatbot_response("Hey")
