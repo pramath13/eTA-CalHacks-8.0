@@ -42,8 +42,8 @@ def send_message():
     msg = TextBot(canvas,message=ChatLog.get())
     texts.append(msg)
     canvas.move(ALL, 0, -150)
-    
-    reply = ReplyBot(canvas, message = "hello3")
+    res = chatbot_response(msg)
+    reply = ReplyBot(canvas, message = res)
     texts.append(reply)
     ChatLog.delete(0,'end')
 
