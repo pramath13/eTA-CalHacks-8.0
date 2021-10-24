@@ -10,7 +10,7 @@
      "context": [""]
     },
     {"tag": "goodbye",
-     "patterns": ["Cya", "See you later", "Bye", "Goodbye", "Nice chatting to you", "Talk to you later", "ttyl"],
+     "patterns": ["Cya", "See you later", "Bye", "Goodbye", "Nice chatting to you", "Talk to you l]ater", "ttyl"],
      "responses": ["See you!", "Talk to you later", "Bye!", "Nice chatting to you"],
      "context": [""]
     },
@@ -105,7 +105,7 @@
      "context": [""]
        },
     {"tag": "other",
-     "patterns": ["fewfwehfewhieruoiergklsdnvboset40tjafqwiohprohfljawroigfdlfjaralyriuryitggywfhawiyeihselkjwoiuqkiouefguygoowehfuidsijhf4", "qwer", "asdf", "qwertyuiopasdfghjklzxcvbnm"],
+     "patterns": ["squirrel", "Avocado", "Jello", "Hippo", "Oysters", "Amicable", "Imposter", "Lollipop", "Zoo", "Jealous",  "Ostensible", "Vindicate", "Osteoporosis"],
      "responses": ["I'm not sure I understand", "Can you say that again?", "Sorry, I dont think I can help you with that", "Hmmm?", "I don't have an answer for that. Is there something else I can help you with?"],
      "context": [""]
     },
