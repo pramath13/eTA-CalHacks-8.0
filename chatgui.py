@@ -23,7 +23,7 @@ class TextBot:
         self.i = self.master.create_window(10,450,window=self.frame, anchor="w")       
         Label(self.frame,text="You", font=("Helvetica", 11),bg="light green").grid(row=0,column=1,sticky="w",padx=5)
         Label(self.frame,text= datetime.now().strftime("%d-%m-%Y %X"),font=("Helvetica", 9),bg="light green").grid(row=1,column=1,sticky="w",padx=5)
-        Label(self.frame, text=textwrap.fill(message, 25), font=("Helvetica", 13),bg="light green").grid(row=1, column=1,sticky="w",padx=5,pady=3)
+        Label(self.frame, text=textwrap.fill(message, 25), font=("Helvetica", 13),bg="light green").grid(row=2, column=1,sticky="w",padx=5,pady=3)
         root.update_idletasks()
 
 class ReplyBot:
