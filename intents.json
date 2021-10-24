@@ -86,7 +86,7 @@
     },
     {"tag": "iter_gen",
      "patterns": ["Iterators", "Generators", "Iterables", "Yield", "Iterating", "I don't understand iterators", "I need help with iterables", "I'm lost on generators", "I don't get what yield does", "Could you explain iterators to me?", "What is a generator"],
-     "responses": ["This is quite a complicated topic. Here's a resource to help you out: https://docs.google.com/presentation/d/1n3-R4NR1PIdWn7azEKnF9xSGWf9GJNeQKWyomYYJe1Q/edit?usp=sharing"],
+     "responses": ["Here's a resource to help you out: https://docs.google.com/presentation/d/1n3-R4NR1PIdWn7azEKnF9xSGWf9GJNeQKWyomYYJe1Q/edit?usp=sharing"],
      "context": [""]
     },
     {"tag": "envi_diag",

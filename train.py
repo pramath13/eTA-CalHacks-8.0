@@ -59,7 +59,7 @@ pickle.dump(classes, open('classes.pkl', 'wb'))
 
 # HYPERPARAMETERS
 learning_rate = 0.001
-num_epoch = 100
+num_epoch = 200
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
