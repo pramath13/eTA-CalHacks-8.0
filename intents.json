@@ -1,7 +1,12 @@
 {"intents": [
     {"tag": "greeting",
      "patterns": ["Hello", "What's up", "Hi", "Hey", "What's good"],
-     "responses": ["Hello", "Good to see you again", "Hi there, how can I help you?", "Heyyy!", "Welcome back"],
+     "responses": ["Hello, I'm eTA", "Good to see you again", "Hi there, I'm eTA. How can I help you?", "Heyyy!", "Welcome back"],
+     "context": [""]
+    },
+    {"tag": "introduce",
+     "patterns": ["What's your name?", "My name is", "Who are you?"],
+     "responses": ["I'm eTA, your electronic Teacher's Assistant", "I go by eTA", "You can call me eTA :)"],
      "context": [""]
     },
     {"tag": "goodbye",
