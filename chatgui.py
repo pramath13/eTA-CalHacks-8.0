@@ -11,7 +11,7 @@ root = Tk()
 root.config(bg="lightblue")
 root.geometry('410x600+400+100')
 
-canvas = Canvas(root, width=200, height=200,bg="white")
+canvas = Canvas(root, width=500, height=400,bg="white")
 canvas.grid(row=0,column=0,columnspan=2)
 canvas.place(x=10, y=10, width=390, height=530)
 

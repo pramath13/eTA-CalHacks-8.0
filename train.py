@@ -105,9 +105,6 @@ for epoch in range(num_epoch):
     correct_per_class = list(0 for i in range(num_classes))
     total_per_class = list(0 for i in range(num_classes))
     total_per_pred = list(0 for i in range(num_classes))
-    recall_list = []
-    precision_list = []
-    f1_list = []
     loss_list = []
     print(epoch)
     assert len(train_x) == len(train_y)
