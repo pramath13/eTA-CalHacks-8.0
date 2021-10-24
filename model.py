@@ -15,7 +15,7 @@ class LanguageModel(nn.Module):
         self.softmax = nn.Softmax()
 
     def forward(self, x):
-        #print("SHAPE", x.shape)
+        print("SHAPE", x.shape)
         x = self.dropout(self.relu(self.fc1(x)))
         x = self.dropout(self.relu(self.fc2(x)))
         x = self.fc3(x)
