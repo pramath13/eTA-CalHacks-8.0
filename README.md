@@ -1,10 +1,10 @@
 Cal Hacks 8.0
 
-#Your eTA!
+# Your eTA!
 
 Ask it anything! Including course advise and resources at cal!
 
-###Built using:
+### Built using:
 - Pytorch
 - Numpy
 - NLTK
