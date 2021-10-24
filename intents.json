@@ -19,8 +19,13 @@
      "responses": ["You're welcome", "Glad I could help :)", "Any time!", "No problem"],
      "context": [""]
     },
+    {"tag": "simple_response",
+     "patterns": ["Nice", "Cool", "Ok", "Alright", "Aight", "Yessir", "Gotcha", "Got it", "Okie", "Yes", "Yea"],
+     "responses": ["Anything else I can do for you?", ":)", "Can I help you with anything else?"],
+     "context": [""]
+    },
     {"tag": "noanswer",
-     "patterns": [],
+     "patterns": [""],
      "responses": ["Sorry, come again?", "Could you tell me more?", "I'm not sure I understand :/"],
      "context": [""]
     },
@@ -47,11 +52,6 @@
     {"tag": "mentalhealthhelp",
      "patterns": ["I'm depressed", "I hate myself", "I want to die", "I want to kill myself", "I have depression", "I can't take it anymore", "There's nothing to live for", "How do I commit suicide", "Life is pain"],
      "responses": ["Help is available. Here's the National Suicide Prevention Lifeline: 800-273-8255"],
-     "context": [""]
-    },
-    {"tag": "relationship",
-     "patterns": ["Where can I find a relationship?", "I want a boyfriend", "I want a girlfriend", "I want to date", "Where can I find love?", "I need a romantic partner"],
-     "responses": ["I'm certain there is someone out there for you!", "You definitely deserve someone who is as amazing as you are!", "I'm sure that you'll find love!"],
      "context": [""]
     },
     {"tag": "hobbies",
